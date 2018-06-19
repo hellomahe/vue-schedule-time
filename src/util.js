@@ -11,16 +11,15 @@ export const getToken = () => {
 };
 
 /* Validate URL */
-export const testUrl = (url) => {
-  if (!url || url.trim() === '') {
-    return true;
-  }
-  const urlRegEx = new RegExp(
-  // eslint-disable-next-line
-    /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/,
-  );
-  return urlRegEx.test(url.toLowerCase().trim());
-};
+// export const testUrl = (url) => {
+//   if (!url || url.trim() === '') {
+//     return true;
+//   }
+//   const urlRegEx = new RegExp(
+//   // eslint-disable-next-line
+//     /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/,);
+//   return urlRegEx.test(url.toLowerCase().trim());
+// };
 
 /* Validate email */
 export const validateEmail = (email) => {

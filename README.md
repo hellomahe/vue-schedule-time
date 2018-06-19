@@ -2,12 +2,14 @@
 ![](http://res.cloudinary.com/mahe/image/upload/v1529399512/2018-06-19_13.40.24_ypykzy.gif)
 
 ### Props
-config(Object) - Object with following keys
-                    - selectedDays(This key holds value of selected days)
-                    - selectedTime(Curently selected time will be in this object                         with keys start and end)
-                    - generator (This is the generated response with selected time and days)
+* config(Object)
+    - Object with following keys
+        - selectedDays(This key holds value of selected days)
+        - selectedTime(Curently selected time will be in this object                         with keys start and end)
+        - generator (This is the generated response with selected time  and days)
                     
-max(Number)    - Maximum number of slots in a day. Default is 3
+* max(Number)
+      - Maximum number of slots in a day. Default is 3
 
 ## Example
  ```
