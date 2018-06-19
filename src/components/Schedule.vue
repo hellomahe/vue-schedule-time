@@ -82,7 +82,6 @@ stroke-linecap="round"/>
 </span>
 </div>
 </div>
-<button @click="()=>this.$emit('change','sdsd')">generate</button>
 </div>
 </template>
 
@@ -100,7 +99,10 @@ export default{
     event: 'change'
   },
   props:{
-    max:Number,
+    max:{
+      type:Number,
+      default: 3
+    },
     config:{
       type:Object,
       default: function (){
@@ -109,7 +111,7 @@ export default{
             start:'',
             end:''
           },
-        selectedDays:['Monday'],
+        selectedDays:[''],
         generator: [
         {
           label: 'Monday',

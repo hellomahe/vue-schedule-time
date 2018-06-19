@@ -21,7 +21,7 @@ export default {
     return{
       check:'',
       config:{
-      selectedDays:['Sunday'],
+      selectedDays:[],
       selectedTime:{
         start:'',
         end:''
